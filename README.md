@@ -100,9 +100,6 @@ python main.py --image path/to/retina.jpg
 
 ---
 
-## 🤝 Contributing
-
-- Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) (if available) or open an issue to discuss ideas.
 
 ---
 
