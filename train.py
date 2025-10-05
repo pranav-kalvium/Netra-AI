@@ -21,7 +21,7 @@ def train_one_epoch(loader, model, optimizer, loss_fn, scaler, device):
     losses = []
     loop = tqdm(loader)
     for batch_idx, (data, targets, _) in enumerate(loop):
-        # save examples and make sure they look ok with the data augmentation,
+        # save examples and make sure they look ok with the data augmentations,
         # tip is to first set mean=[0,0,0], std=[1,1,1] so they look "normal"
         #save_image(data, f"hi_{batch_idx}.png")
 
