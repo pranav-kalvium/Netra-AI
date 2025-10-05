@@ -40,7 +40,7 @@ def resize_maintain_aspect(image, desired_size):
     Stole this from some stackoverflow post but can't remember which,
     this will add padding to maintain the aspect ratio.
     """
-    old_size = image.size  # old_size[0] is in (width, height) format
+    old_size = image.size  # old_size[0] is in (width, height) formats
     ratio = float(desired_size) / max(old_size)
     new_size = tuple([int(x * ratio) for x in old_size])
     im = image.resize(new_size, Image.ANTIALIAS)
