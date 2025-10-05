@@ -20,7 +20,7 @@ def make_prediction(model, loader, file):
         x = x.to(config.DEVICE)
         with torch.no_grad():
             predictions = model(x)
-            # Convert MSE floats to integer predictions
+            # Convert MSE floats to integer prediction
             predictions[predictions < 0.5] = 0
             predictions[(predictions >= 0.5) & (predictions < 1.5)] = 1
             predictions[(predictions >= 1.5) & (predictions < 2.5)] = 2
