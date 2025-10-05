@@ -13,7 +13,7 @@ PIN_MEMORY = True
 SAVE_MODEL = True
 LOAD_MODEL = True
 
-# Data augmentation for images
+# Data augmentation for images here 
 train_transforms = A.Compose(
     [
         A.Resize(width=760, height=760),
