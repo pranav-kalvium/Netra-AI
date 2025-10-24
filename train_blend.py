@@ -104,7 +104,7 @@ if __name__ == "__main__":
             loss = loss_fn(scores, y)
             losses.append(loss.item())
 
-            # backward
+            # backward here
             optimizer.zero_grad()
             loss.backward()
 
