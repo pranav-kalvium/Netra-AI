@@ -24,7 +24,7 @@ class DRDataset(Dataset):
             image_file, label = self.data.iloc[index]
         else:
             # if test simply return -1 for label, I do this in order to
-            # re-use same dataset class for test set submission later on
+            # re-use the same dataset class for test set submission later on
             image_file, label = self.image_files[index], -1
             image_file = image_file.replace(".jpeg", "")
 
